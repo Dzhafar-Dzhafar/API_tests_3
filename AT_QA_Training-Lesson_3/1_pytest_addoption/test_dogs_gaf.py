@@ -2,7 +2,7 @@ import pytest
 import requests
 import jsonschema
 
-
+'''
 @pytest.fixture()
 def default_url():
     return "https://dog.ceo/api"
@@ -11,9 +11,9 @@ def default_url():
 @pytest.fixture()
 def pic_url():
     return "breeds/image/random"
+'''
 
-
-testdata = [1, 4, 11, 26, 42, 50, ]
+testdata = [1, 10, 20, 30, 40, 50]
 
 """
 Проверка кода ответа и схемы json
@@ -22,7 +22,7 @@ testdata = [1, 4, 11, 26, 42, 50, ]
 
 def test_res_200(default_url):
     response = requests.get(f"{default_url}/breeds/list/all",
-                            verify=False)  # verify=False иначе падает с ошибкой проверки сертов
+                            verify=True)
     assert response.status_code == 200  # Проверяем статус код
     schema = {
         "type": "object",
@@ -41,7 +41,7 @@ def test_res_200(default_url):
 
 @pytest.mark.parametrize("url_num", testdata)
 def test_list_of_dogs(url_num, default_url, pic_url):
-    response = requests.get(f"{default_url}/{pic_url}/{url_num}", verify=False)  # f-строка для формирования url
+    response = requests.get(f"{default_url}/{pic_url}/{url_num}", verify=True)  # f-строка для формирования url
     assert len(response.json().get(
         "message")) == url_num
-    # Сравниваем количество файлов в json, в "message" с указанным в url, на 51 падает, так как лимит 0
+    # Сравниваем количество файлов в json, в "message" с указанным в url, на 51 падает, так как лимит 50

@@ -13,3 +13,13 @@ def pytest_addoption(parser):
 @pytest.fixture
 def url_param(request):
     return request.config.getoption("--url")
+
+
+@pytest.fixture()
+def default_url():
+    return "https://dog.ceo/api"
+
+
+@pytest.fixture()
+def pic_url():
+    return "breeds/image/random"
