@@ -24,3 +24,6 @@ test_get_content_response_sub_breed_dog_breed
 
 test_get_content_response_sub_breed_dog_breed
 1) Проверяем, что в полученом ответе, в message под позицией 2 получен верный параметр
+
+test_get_fragment_length_check_json_returned
+1) Проверем, что длина message в ответе равняется заданному значению, равному 7
