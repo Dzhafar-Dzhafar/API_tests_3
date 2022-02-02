@@ -11,8 +11,8 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture
-def url_param(request):
-    return request.config.getoption("--url")
+def url_params():
+    return "https://dog.ceo/api/breed/hound/list/"
 
 
 @pytest.fixture()

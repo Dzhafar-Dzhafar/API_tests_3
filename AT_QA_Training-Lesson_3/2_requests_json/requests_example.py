@@ -32,4 +32,4 @@ print(pprint.pprint(r.json()))
 
 
 def test_json_dog_1(json_param):
-    return r.json()
+    return r
