@@ -13,3 +13,5 @@ test_get_response_json_contents_id_8_user_content
 3) Проверяем phone клиента
 4) Проверяем company-name клиента
 
+test_get_response_json_elements_id_10
+1) Проверяем количество полученных параметров по клиенту с id=10
