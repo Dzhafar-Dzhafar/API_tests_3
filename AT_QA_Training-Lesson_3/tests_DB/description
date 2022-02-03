@@ -7,3 +7,7 @@ test_get_check_status_code_equals_200
 test_get_response_json_contents
 1) Переходим к "tableOfContents" и сравниваем, что у нас есть в списке контента
 
+test_get_response_json_contents_population_elements
+1) Проверяем число элементов контента, которое должно оказаться равное 7
+
+
