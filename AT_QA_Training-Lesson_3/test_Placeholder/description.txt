@@ -1,0 +1,3 @@
+test_get_check_status_code_PR_equals_200
+1) Проверяем, что при обращении к https://jsonplaceholder.typicode.com/ получаем статус код 200
+
