@@ -4,3 +4,6 @@ test_get_check_status_code_PR_equals_200
 test_get_check_equals_user_13
 1) Проверяем, что данные по пользователю с id=13 отсутствуют
 
+test_get_check_bs_id_7
+1) Проверяем корректность параметра от пользователя с id 7
+
