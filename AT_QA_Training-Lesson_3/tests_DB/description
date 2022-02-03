@@ -1,0 +1,7 @@
+test_get_check_encoding_equals_utf8
+1) Проверяем кодировку https://www.openbrewerydb.org/projects на соответствие заданной utf-8
+
+test_get_check_status_code_equals_200
+1) Проверяем статус код https://www.openbrewerydb.org/, чтоб он был равен 200
+
+
