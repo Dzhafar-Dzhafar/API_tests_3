@@ -14,4 +14,7 @@ test_get_response_json_contents_0
 1) Сравниваем контент под индексом 0 с нашим примером
 
 test_get_response_json_contents_6
-1)Сравниваем контент под индексом 6 с нашим примером
+1) Сравниваем контент под индексом 6 с нашим примером
+
+test_get_response_json_contents_6_search_by_content
+1) Ищем фрагмент в полученном ответе от блока контент
