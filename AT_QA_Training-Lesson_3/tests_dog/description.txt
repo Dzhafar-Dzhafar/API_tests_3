@@ -31,3 +31,6 @@ test_get_fragment_length_check_json_returned
 test_get_check_word_in_fragment_json_returned
 1) Проверяем, что в полученом фрагменте присутствует слово заданное в поиске для блока message
 
+test_get_check_yandex_status_code_200
+1) Проверяем статус 200 от yandex.ru
+
